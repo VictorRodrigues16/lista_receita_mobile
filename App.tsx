@@ -1,13 +1,15 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { StatusBar } from 'expo-status-bar';
-import TabNavigator from './src/navigation/TabNavigator';
+import { NavigationContainer } from "@react-navigation/native"
+import { StatusBar } from "expo-status-bar"
+import TabNavigator from "./src/navigation/TabNavigator"
+import { RecipesProvider } from "./src/context/RecipesContext"
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <StatusBar style="light" backgroundColor="#1e3a8a" />
-      <TabNavigator />
-    </NavigationContainer>
-  );
+    <RecipesProvider>
+      <NavigationContainer>
+        <StatusBar style="light" backgroundColor="#d97706" />
+        <TabNavigator />
+      </NavigationContainer>
+    </RecipesProvider>
+  )
 }

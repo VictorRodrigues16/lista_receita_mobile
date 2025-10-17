@@ -1,12 +1,20 @@
+import type { NavigatorScreenParams } from "@react-navigation/native"
+
+export type Recipe = {
+  id: string
+  name: string
+  ingredients: string
+  prepTime: number
+  refrigerate: boolean
+  createdAt: Date
+}
+
+export type RecipesStackParamList = {
+  RecipesList: undefined
+  RecipeDetails: { recipe: Recipe }
+}
+
 export type RootTabParamList = {
-  Home: {
-    message?: string;
-    user?: string;
-  };
-  Login: {
-    redirectTo?: string;
-  };
-  Register: {
-    email?: string;
-  };
-};
+  Recipes: NavigatorScreenParams<RecipesStackParamList>
+  AddRecipe: undefined
+}
