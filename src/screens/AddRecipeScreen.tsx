@@ -31,7 +31,6 @@ const AddRecipeScreen = () => {
   const validateForm = (): boolean => {
     let isValid = true
 
-    // Validate name
     if (name.trim() === "") {
       setNameError("O nome da receita é obrigatório")
       isValid = false
@@ -39,7 +38,6 @@ const AddRecipeScreen = () => {
       setNameError("")
     }
 
-    // Validate prep time
     const prepTimeNum = Number(prepTime)
     if (prepTime.trim() === "") {
       setPrepTimeError("O tempo de preparo é obrigatório")
@@ -63,7 +61,6 @@ const AddRecipeScreen = () => {
         refrigerate,
       })
 
-      // Reset form
       setName("")
       setIngredients("")
       setPrepTime("")
@@ -113,7 +110,6 @@ const AddRecipeScreen = () => {
             {nameError ? <Text style={styles.errorText}>{nameError}</Text> : null}
           </View>
 
-          {/* Ingredients Field */}
           <View style={styles.fieldContainer}>
             <Text style={styles.label}>Ingredientes</Text>
             <View style={styles.textAreaContainer}>
@@ -131,7 +127,6 @@ const AddRecipeScreen = () => {
             </View>
           </View>
 
-          {/* Prep Time Field */}
           <View style={styles.fieldContainer}>
             <Text style={styles.label}>
               Tempo de Preparo (minutos) <Text style={styles.required}>*</Text>
@@ -153,7 +148,6 @@ const AddRecipeScreen = () => {
             {prepTimeError ? <Text style={styles.errorText}>{prepTimeError}</Text> : null}
           </View>
 
-          {/* Refrigerate Field */}
           <View style={styles.fieldContainer}>
             <View style={styles.switchContainer}>
               <View style={styles.switchLabel}>
@@ -172,7 +166,6 @@ const AddRecipeScreen = () => {
             </View>
           </View>
 
-          {/* Submit Button */}
           <TouchableOpacity style={styles.submitButton} onPress={handleSubmit} activeOpacity={0.8}>
             <Ionicons name="checkmark-circle" size={24} color="#fff" />
             <Text style={styles.submitButtonText}>Adicionar Receita</Text>
