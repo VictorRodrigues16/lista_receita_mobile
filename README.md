@@ -165,22 +165,6 @@ recipe-app/
 └── README.md                            # Este arquivo
 ```
 
----
-
-## 🛠️ Tecnologias Utilizadas
-
-| Tecnologia | Descrição |
-|------------|-----------|
-| **React Native** | Framework para desenvolvimento mobile multiplataforma |
-| **Expo** | Plataforma que facilita o desenvolvimento React Native |
-| **React Navigation** | Biblioteca de navegação (Tab + Stack) |
-| **TypeScript** | Superset JavaScript com tipagem estática |
-| **Context API** | Gerenciamento de estado global do React |
-| **AsyncStorage** | Persistência local de dados |
-| **Ionicons** | Biblioteca de ícones |
-
----
-
 ## 🎯 Hooks Utilizados
 
 ### useState
@@ -233,32 +217,6 @@ recipe-app/
 - Valor padrão: false
 - Sem validação necessária
 
----
-
-## 🎓 Requisitos Acadêmicos Atendidos
-
-### Navegação (4 pontos)
-- [x] Tab Navigation com 2 abas funcionais
-- [x] Stack Navigation para tela de detalhes
-- [x] Navegação fluida e intuitiva
-
-### Formulário e Validação (4 pontos)
-- [x] Campo "Nome da Receita" (obrigatório)
-- [x] Campo "Ingredientes" (área de texto)
-- [x] Campo "Tempo de Preparo" (numérico)
-- [x] Campo "Reservar na geladeira" (booleano)
-- [x] Validação com useState
-- [x] Nome não vazio
-- [x] Tempo de preparo numérico e positivo
-
-### Vídeo e Imagens (2 pontos)
-- [ ] Vídeo demonstrativo do app funcionando
-- [ ] Screenshots das principais telas
-- [ ] Documentação de como executar
-
-**Total**: 10 pontos
-
----
 
 ## 🐛 Solução de Problemas
 
@@ -270,30 +228,9 @@ npm install
 npx expo start -c
 ```
 
-### Erro: "java.lang.String cannot be cast to java.lang.Boolean"
-- Este erro foi corrigido na versão atual
-- Certifique-se de estar usando a versão mais recente do código
-
-### App não abre no emulador
-```bash
-# Verifique se o emulador está rodando
-adb devices
-
-# Reinicie o Expo
-npx expo start -c
-```
-
-### Mudanças não aparecem
-```bash
-# Limpe o cache do Expo
-npx expo start -c
-
-# Ou pressione 'r' no terminal para reload
-```
-
 ---
 
-## 📚 Recursos de Aprendizado
+## 📚 Recursos
 
 - [Documentação React Native](https://reactnative.dev/)
 - [Documentação Expo](https://docs.expo.dev/)
@@ -303,24 +240,12 @@ npx expo start -c
 
 ---
 
-## 👨‍💻 Desenvolvimento
-
-Este projeto foi desenvolvido como trabalho acadêmico para demonstrar:
-
-- ✅ Conhecimento em React Native e Expo
-- ✅ Implementação de navegação complexa (Tab + Stack)
-- ✅ Uso correto de Hooks do React
-- ✅ Formulários com validação robusta
-- ✅ Gerenciamento de estado com Context API
-- ✅ TypeScript para type safety
-- ✅ Boas práticas de UI/UX
-- ✅ Código limpo e organizado
-
----
-
-## 📝 Licença
-
-Este projeto foi desenvolvido para fins educacionais.
+## 👨‍💻 Integrantes 
+ - ERICK MOLINA - RM 553852
+ - FELIPE CASTRO SALAZAR - RM 553464
+ - MARCELO VIEIRA DE MELO - RM 552953
+ - RAYARA AMARO FIGUEIREDO - RM 552635
+ - VICTOR RODRIGUES - RM 554158
 
 ---
 
